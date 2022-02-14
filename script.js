@@ -1,4 +1,8 @@
 $(document).ready(function () {
+    let maxDate = moment().subtract(1, 'hours').format("YYYY-MM-DDTHH:mm");
+    console.log(maxDate)
+    $('#input_datetime').prop('max', maxDate)
+
     $('#submit').click(function () {
         let datetime = $('#input_datetime').val();
         let timestamp = moment(datetime).format("X");

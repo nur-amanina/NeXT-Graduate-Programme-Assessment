@@ -44,8 +44,8 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">ISS Location <span class="sr-only">(current)</span></a>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">ISS Location</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">People on ISS</a>
@@ -61,31 +61,13 @@
     <div class="container">
         <div class="row mt-5">
             <div class="col-12 text-center">
-                <h1 class="font-weight-bold">Location of the ISS</h1>
-            </div>
-        </div>
-        <div class="row align-items-end mt-5">
-            <div class="col-10">
-                <label for="input_date" class="font-weight-bold">Date and Time :</label>
-                <input type="datetime-local" name="dateTime" id="input_datetime" class="form-control">
-            </div>
-            <div class="col-2">
-                <button type="submit" class="btn btn-primary btn-block" id="submit">Submit</button>
+                <h1 class="font-weight-bold">Earth From Space : Live Views from the ISS</h1>
             </div>
         </div>
         <div class="row mt-5">
-            <div class="col-12">
-                <table class="table table-striped" id="result">
-                    <thead class="thead-dark">
-                        <tr>
-                            <th>Latitude</th>
-                            <th>Longitude</th>
-                            <th>City Name</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                    </tbody>
-                </table>
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/86YLFOog4GM"
+                    allowfullscreen></iframe>
             </div>
         </div>
     </div>
@@ -101,9 +83,6 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/handlebars/4.7.7/handlebars.min.js"></script>
     <script src="script.js"></script>
-    <!-- <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZMZJEJfLv1y-2sUY-w9huZB4YR7QhlV8&callback=initMap&libraries=places,geometry&solution_channel=GMP_QB_locatorplus_v4_cABD"
-        async defer></script> -->
 </body>
 
 </html>
