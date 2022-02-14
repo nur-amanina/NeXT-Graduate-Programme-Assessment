@@ -6,6 +6,7 @@ $(document).ready(function () {
     $('#submit').click(function () {
         let datetime = $('#input_datetime').val();
         let timestamp = moment(datetime).format("X");
+        console.log(timestamp)
 
         $.ajax({
             url: `https://api.wheretheiss.at/v1/satellites/25544/positions?timestamps=${timestamp}&units=kilometers`,
